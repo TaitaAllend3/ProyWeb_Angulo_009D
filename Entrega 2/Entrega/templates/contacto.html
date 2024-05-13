@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactar a la PYME de venta de sushi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Escribenos un comentario</h2>
+        <form id="contactForm" action="#" method="post">
+            <label for="name">Nombre(*):</label>
+            <br>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+            <label for="email">Email(*):</label>
+            <br>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            <label for="phone">Teléfono(*):</label>
+            <br>
+            <input type="number" id="phone" name="phone" required pattern="[0-9]{9}" placeholder="+56">
+            <br><br>
+            <label for="comment">Comentario(*):</label>
+            <br>
+            <textarea id="message" name="message" rows="10" required></textarea>
+            <br>
+            <input id="basurero" type="button" onclick="limpiarTexto();">
+            <br><br>
+            <input class="btn btn-danger" type="button" value="Enviar" onclick="enviar();"></input>
+            <br><br>
+        </form>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>¡Datos enviados con éxito!</p>
+        </div>
+    </div>
+
+    <script src="../js/functions.js"></script>
+    <script src="../js/modal.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	 
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

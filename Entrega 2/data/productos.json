@@ -1,0 +1,76 @@
+{
+    "productos":[ 
+      {
+         "id": "1",
+         "nombre": "HandRoll",
+         "Precio": 3000,
+         "imagen": "https://dummyimage.com/640x360/fff/aa"
+     },
+     {
+         "id": "2",
+         "nombre": "Promoción de 20 piezas",
+         "Precio": 6500,
+         "imagen": "https://dummyimage.com/640x360/fff/aa"
+     },
+     {
+         "id": "3",
+         "nombre": "Promoción de 30 piezas",
+         "Precio": 9000,
+         "imagen": "https://dummyimage.com/640x360/fff/aa"
+     },
+     {
+         "id": "4",
+         "nombre": "Promoción de 40 piezas",
+         "Precio": 12000,
+         "imagen": "https://dummyimage.com/640x360/fff/aa"
+     },
+     {
+         "id": "5",
+         "nombre": "Promoción de 50 piezas",
+         "Precio": 14500,
+         "imagen": "https://dummyimage.com/640x360/fff/aa"
+     },
+     {
+         "id": "6",
+         "nombre": "Promoción de 60 piezas",
+         "Precio": 17000,
+         "imagen": "https://dummyimage.com/640x360/fff/aa"
+     },
+     {
+         "id": "7",
+         "nombre": "Promoción de 70 piezas",
+         "Precio": 19000,
+         "imagen": "https://dummyimage.com/640x360/fff/aa"
+     },
+     {
+         "id": "8",
+         "nombre": "Promoción de 80 piezas",
+         "Precio": 22000,
+         "imagen": "https://dummyimage.com/640x360/fff/aa"
+     },
+     {
+         "id": "9",
+         "nombre": "Promoción de 90 piezas",
+         "Precio": 25000,
+         "imagen": "https://dummyimage.com/640x360/fff/aa"
+     },
+     {
+         "id": "10",
+         "nombre": "Promoción de 100 piezas",
+         "Precio": 28000,
+         "imagen": "https://dummyimage.com/640x360/fff/aa"
+     },
+     {
+         "id": "11",
+         "nombre": "Gohan",
+         "Precio": 4500,
+         "imagen": "https://dummyimage.com/640x360/fff/aa"
+     },
+     {
+         "id": "12",
+         "nombre": "SushiBurger",
+         "Precio": 4500,
+         "imagen": "https://dummyimage.com/640x360/fff/aa"
+     }
+    ]
+}
