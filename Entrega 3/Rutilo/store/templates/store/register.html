@@ -1,0 +1,32 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+<div class="content">
+    <div class="formulario_container">
+        <div id="registro_container" class="registro_container">
+            <h1 class="registro_title">Registro de Usuarios</h1>
+            <form action="#" method="POST">
+                <input class="registro_input" type="text" name="nombre" placeholder="Nombre completo" required><br>
+                <input class="registro_input" type="email" name="email" placeholder="Correo electrónico" required><br>
+                <input class="registro_input" type="password" name="password" placeholder="Contraseña" required><br>
+                <input class="registro_submit" type="submit" value="Registrarse">
+                <hr>
+                <button id="toggleBtnRegistro" class="toggleBtn">Iniciar Sesión</button>
+
+            </form>
+        </div>
+        <div id="inicio_container" class="inicio_container" style="display: none;">
+            <h1 class="inicio_title">Inicio de Sesión</h1>
+            <form action="#" method="POST">
+                <input class="inicio_input" type="email" name="email" placeholder="Correo electrónico" required><br>
+                <input class="inicio_input" type="password" name="password" placeholder="Contraseña" required><br>
+                <input class="inicio_submit" type="submit" value="Iniciar Sesión">
+                <hr>
+                <button id="toggleBtnInicio" class="toggleBtn">Registrarse</button>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

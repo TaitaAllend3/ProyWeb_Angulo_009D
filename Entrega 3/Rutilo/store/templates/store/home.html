@@ -1,0 +1,83 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+<div class="fondo">
+    <div style="display: flex;">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{% static 'images/im21.jpg' %}" alt="Joya 1" />
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'images/im15.jpg' %}" alt="Joya 2" />
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'images/im14.jpg' %}" alt="Joya 3" />
+                </div>
+            </div>
+        </div>
+        <div style="margin-left: 20px; display: flex; flex-direction: column; justify-content: center;">
+            <h1 class="home-h">Brilla con elegancia </h1>
+            <p class="home-p">Adorna tu vida con nuestra selección de joyas, <br> donde cada pieza es un tesoro único en
+                <br> oro, plata y piedras preciosas.</p>
+        </div>
+    </div>
+</div>
+<section class="blog-container">
+    <h2 class="titulo">Descubre los Tesoros de la Joyería</h2>
+    <div class="blog-content">
+        <div class="blog-1">
+            <h3>EL ORO</h3>
+            <p>
+                De 24 quilates es el más puro
+            </p>
+        </div>
+        <div class="blog-1">
+            <h3>EL DIAMANTE</h3>
+            <p>
+                Es la sustancia natural más dura conocida en la Tierra
+            </p>
+        </div>
+        <div class="blog-1">
+            <h3>LA PLATA</h3>
+            <p>
+                Se mezcla con otros metales, para aumentar su resistencia.
+            </p>
+        </div>
+    </div>
+</section>
+<div class="comentarios">
+    <h2 class="titulo-comment">Opiniones de Nuestros Clientes Satisfechos</h2>
+    <div class="card-comment">
+        <div class="name">Juan Pérez</div>
+        <div class="stars">★★★☆☆</div>
+        <div class="comment">Las joyas son bonitas, pero esperaba más brillo en los diamantes.</div>
+    </div>
+    <div class="card-comment">
+        <div class="name">María López</div>
+        <div class="stars">★★★★☆</div>
+        <div class="comment">El anillo es precioso y llegó en perfecto estado. Muy contenta.</div>
+    </div>
+    <div class="card-comment">
+        <div class="name">Carlos García</div>
+        <div class="stars">★★★★★</div>
+        <div class="comment">Excelente calidad y diseño. Definitivamente volveré a comprar aquí.</div>
+    </div>
+    <div class="card-comment">
+        <div class="name">Ana Rodríguez</div>
+        <div class="stars">★★★★☆</div>
+        <div class="comment">Los pendientes son hermosos y la entrega fue rápida.</div>
+    </div>
+    <div class="card-comment">
+        <div class="name">Luis Martínez</div>
+        <div class="stars">★★★☆☆</div>
+        <div class="comment">El collar es bonito, pero la cadena podría ser más resistente.</div>
+    </div>
+    <div class="card-comment">
+        <div class="name">Elena Gómez</div>
+        <div class="stars">★★★★★</div>
+        <div class="comment">El brazalete es simplemente perfecto, me encanta.</div>
+    </div>
+</div>
+
+{% endblock content %}

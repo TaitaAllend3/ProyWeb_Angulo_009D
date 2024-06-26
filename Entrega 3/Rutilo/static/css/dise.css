@@ -1,0 +1,800 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+body {
+	background-color: hsl(0, 0%, 13%);
+	font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: hsl(0, 0%, 20%);
+}
+
+h3 {
+	color: antiquewhite !important;
+}
+
+.navbar-nav {
+	font-size: 18px;
+	margin-left: 50px;
+}
+
+.navbar-nav a {
+	margin-right: 20px;
+	/* Ajusta la cantidad de separación que deseas */
+}
+/* TIENDA */
+.box-element {
+	box-shadow: hsl(0, 1%, 33%) 0 0 16px;
+	background-color: #D9BF8F;
+	border-radius: 4px;
+	margin-bottom: 1rem;
+	padding: 20px;
+	width: 200px;
+}
+.thumbnail {
+	width: 200px;
+	height: 200px;
+	-webkit-box-shadow: -1px -3px 5px -2px rgb(80, 80, 80);
+	-moz-box-shadow: -1px -3px 5px -2px rgb(80, 80, 80);
+	box-shadow: -1px -3px 5px -2px rgb(80, 80, 80);
+}
+/* TIENDA */
+.box-element2 {
+	box-shadow: hsl(0, 1%, 33%) 0 0 16px;
+	background-color: #D9BF8F;
+	border-radius: 4px;
+	margin-bottom: 1rem;
+	padding: 20px;
+	width: 100%;
+}
+h4 {
+	font-size: 18px;
+	color: #584219d1;
+	font-family: "Playfair Display", serif;
+}
+
+h6 {
+	font-family: "Roboto Slab", serif;
+
+}
+
+
+
+.efecto {
+	transition: transform 0.3s, box-shadow 0.3s;
+	width: fit-content;
+}
+
+.efecto:hover {
+	transform: scale(1.02);
+	box-shadow: 0 2px 10px rgba(33, 33, 33, 0.2);
+}
+
+
+.product {
+	border-radius: 0 0 4px 4px;
+}
+
+.bg-dark {
+	background-color: #bf9c5a !important;
+}
+
+#cart-icon {
+	width: 30px;
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 15px;
+	color: #D9BF8F;
+	filter: grayscale(100%) brightness(0) invert(1);
+	/* Aplica el filtro para cambiar el color */
+	transition: filter 0.3s ease;
+}
+.carro-item {
+	font-weight: bold;
+}
+.carro-items {
+	font-weight: bold;
+}
+#cart-icon:hover {
+	filter: grayscale(100%) brightness(0) hue-rotate(90deg);
+}
+
+#cart-total {
+	display: block;
+	text-align: center;
+	color: #fff;
+	background-color: rgb(27, 22, 22);
+	width: 20px;
+	height: 23px;
+	border-radius: 50%;
+	font-size: 14px;
+	margin-right: 100px;
+}
+
+.col-lg-4,
+.col-lg-6,
+.col-lg-8,
+.col-lg-12 {
+	margin-top: 10px;
+}
+#ingresar {
+	background-color: #eabf6eac;
+	border-radius: 20px;
+	display: inline-block;
+	border: none !important;
+	color: white;
+	margin-right: 20px;
+	margin-left: 30px;
+}
+
+#ingresar:hover {
+	background-color: #8a754f9f;
+}
+
+.btn {
+	background-color: #bf9c5a;
+	border-radius: 0;
+	display: inline-block;
+	border: none;
+	color: white;
+}
+
+.btn:hover {
+	background-color: #8a754f;
+}
+
+.row-image {
+	width: 100px;
+	margin-left: 80px;
+}
+
+.logo {
+	width: 90px;
+	margin: 5px;
+	margin-left: 80px;
+}
+
+.form-field {
+	width: 250px;
+	display: inline-block;
+	padding: 5px;
+}
+
+.cart-row {
+	display: flex;
+	align-items: flex-stretch;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #ececec;
+}
+
+.quantity {
+	display: inline-block;
+	font-weight: 700;
+	padding-right: 10px;
+}
+
+.chg-quantity {
+	width: 12px;
+	cursor: pointer;
+	display: block;
+	margin-top: 5px;
+	transition: .1s;
+}
+
+.chg-quantity:hover {
+	opacity: .6;
+}
+
+
+.hidden {
+	display: none !important;
+}
+
+footer {
+	background-color: #967a45 !important;
+	color: antiquewhite;
+	padding: 20px 0;
+	text-align: center;
+	margin-top: 50px;
+}
+
+#scrollToTopButton {
+	display: none;
+	/* Ocultar el botón por defecto */
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: #34272191;
+	/* Color rojo transparente */
+	color: white;
+	font-size: 20px;
+	width: 40px;
+	height: 40px;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: opacity 0.3s ease;
+	/* Transición suave para la opacidad */
+}
+
+#scrollToTopButton:hover {
+	background-color: #aa7a62b6;
+	/* Cambiar el color al pasar el mouse */
+}
+
+/* FOOTER */
+.footer-container {
+	display: flex;
+	justify-content: space-around;
+}
+
+.footer-column {
+	flex: 1;
+	padding: 0 20px;
+}
+
+.footer-column h3 {
+	font-size: 20px;
+}
+
+.social-links {
+	list-style-type: none;
+	padding: 0;
+	margin-top: 25px;
+}
+
+.social-links li {
+	display: inline;
+	margin: 0 10px;
+}
+
+.social-links li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+#insta,
+#face,
+#what {
+	width: 50px;
+	/* Ajusta el tamaño de las imágenes */
+	margin-bottom: 10px;
+	filter: grayscale(100%) brightness(0) invert(1);
+	/* Aplica el filtro para cambiar el color */
+	transition: filter 0.3s ease;
+	/* Añade una transición suave */
+}
+
+#insta:hover,
+#face:hover,
+#what:hover {
+	filter: grayscale(100%) brightness(0) invert(0.5);
+	/* Cambia el color al pasar el mouse */
+}
+/* FOOTER */
+
+
+
+/* HOME */
+/* carrusel */
+.carousel {
+	width: 450px;
+	height: 550px;
+	overflow: hidden;
+	margin-left: 0;
+	/* Asegura que el carrusel esté alineado a la izquierda */
+}
+
+.carousel-inner {
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+.carousel-item {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	animation: fadeIn 0.5s ease-in-out forwards;
+	/* 1s es la duración de la animación */
+}
+.carousel-item img {
+	width: 100%;
+	/* Establece un ancho fijo del 100% para todas las imágenes */
+	height: 100%;
+	object-fit: cover;
+	/* Para asegurar que todas las imágenes mantengan su relación de aspecto */
+	filter: brightness(90%) saturate(80%);
+	/* Ajusta el brillo y la saturación según sea necesario */
+
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.home-h {
+	color: whitesmoke;
+	font-family: "Playfair Display", serif;
+	text-align: center;
+	margin-left: 150px;
+	margin-bottom: 20px;
+}
+
+.home-p {
+	color: whitesmoke;
+	font-family: "Playfair Display", serif;
+	font-size: 30px;
+	margin-left: 150px;
+	text-align: center;
+}
+
+/* info */
+
+.blog-container {
+	margin-top: 24px;
+    background-image: linear-gradient(
+        rgba(153, 153, 153, 0.212),
+        rgba(0, 0, 0, 0.53)),
+        url(../images/fondo5.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+    width: 100%; 
+    color:white;
+}
+.comentarios {
+    margin-top: 24px;
+    background-image: linear-gradient(
+        rgba(153, 153, 153, 0.212),
+        rgba(0, 0, 0, 0.53)),
+        url('../images/fondo3.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.card-comment {
+    background-color: white;
+    color: hsl(0, 0%, 20%);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transition: transform 0.2s;
+}
+
+.card-comment:hover {
+    transform: scale(1.05);
+}
+
+.name {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.stars {
+    color: #8a754f;
+    font-size: 16px;
+}
+
+.comment {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.titulo-comment {
+    font-family: 'Playfair Display', serif;
+    color: white;
+    font-size: 50px;
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.blog {
+    padding: 100px 80px;
+    text-align: center;
+}
+.titulo {
+	font-family: "Playfair Display", serif;
+	color: white;
+    display: flex;
+    justify-content: space-around;
+    font-size: 50px;
+}
+.blog-content {
+	font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.blog-1 {
+	margin-top: 10px;
+    padding: 15px 55px;
+    color: white;
+}
+.blog-1 img {
+    width: 250px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.blog-1 h3 {
+    font-size: 25px;
+    color: white;
+}
+.blog-1 p {
+    font-size: 15px;
+}
+/* HOME */
+/* NOSOTROS */
+.fondo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 160%;
+    background-image: linear-gradient(
+        rgba(48, 46, 46, 0.24),
+        rgba(0, 0, 0, 0.781)),
+        url('../images/portada.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(8px); /* Aplica el desenfoque solo al fondo */
+    z-index: -1; /* Coloca este pseudo-elemento detrás del contenido */
+} 
+
+
+.container-nosotros {
+	max-width: 1200px;
+	width: 100%;
+	color: white;
+	text-align: center;
+	padding: 50px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	background-image: linear-gradient(
+        rgba(48, 46, 46, 0.24),
+        rgba(0, 0, 0, 0.781)),
+        url('../images/fondo10.jpeg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+}
+.container-nosotros::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/fondo10.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(8px); /* Aplica el desenfoque solo al fondo */
+    z-index: -1; /* Coloca este pseudo-elemento detrás del contenido */
+}
+.titulo-nosotros {
+	font-family: 'Playfair Display', serif;
+	font-size: 50px;
+	margin-bottom: 20px;
+	color: white;
+}
+.subtitulo {
+	font-family: 'Playfair Display', serif;
+	font-size: 30px;
+	margin-bottom: 40px;
+	color: whitesmoke;
+}
+.parrafo {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	line-height: 1.6;
+	margin-bottom: 20px;
+	text-align: justify;
+}
+
+.image-container {
+    text-align: center;
+}
+
+.imagen {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 30px; /* Esto centra la imagen horizontalmente y le da un margen inferior */
+	filter: hue-rotate(180deg) brightness(80%);
+}
+/* NOSOTROS */
+
+
+/* REGISTRO */
+
+/* Estilos para los formularios */
+.formulario_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registro_container, .inicio_container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    margin: 0 20px;
+	transition: opacity 0.3s ease;
+
+}
+
+.registro_title, .inicio_title {
+    font-family: "Playfair Display", serif;
+    color: #8a754f;
+    margin-bottom: 20px;
+}
+
+.registro_input, .inicio_input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #8a754f;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.registro_submit, .inicio_submit {
+    width: 100%;
+    background-color: #8a754f;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.registro_submit:hover, .inicio_submit:hover {
+    background-color: #654321; /* Cambia el color al pasar el ratón */
+}
+
+.content{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* Ajusta la altura como desees */
+}
+
+/* Estilos para el botón de alternancia */
+.toggleBtn {
+	background-color: #D9BF8F;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggleBtn:hover {
+    background-color: #bf9c5a;
+}
+
+/* REGISTRO */
+
+
+
+@media screen and (max-width: 412px) {
+	#scrollToTopButton {
+		display: none !important;
+	}
+	body {
+		width: 100%; /* El cuerpo ocupa todo el ancho de la ventana gráfica */
+		max-width: 412px; /* Pero no se extiende más allá de 412px */
+		margin: 0 auto; /* Centra el cuerpo horizontalmente */
+		padding: 0; /* Elimina el relleno predeterminado */
+	}
+	.footer-column {
+        flex: 1;
+        padding: 0; /* Elimina el relleno */
+        margin-bottom: 20px; /* Añade un margen inferior entre los elementos */
+    }
+	.iconos {
+		display: flex;
+		/* Usar flexbox */
+		flex-direction: column;
+		/* Apilar los elementos verticalmente */
+		align-items: center;
+		/* Centrar los elementos horizontalmente */
+	}
+
+	.social-links li {
+		margin-bottom: 10px;
+		/* Espacio entre cada conjunto de imágenes y enlaces */
+	}
+
+	.logo {
+		width: 90px;
+		margin: 5px;
+		margin-left: 40px;
+		margin-bottom: 20px;
+	}
+
+	#ingresar {
+		margin-left: 45px;
+	}
+
+	.navbar-toggler {
+		margin-right: 20px;
+		border: none;
+	}
+
+	.blog-container, .comentarios, .blog {
+		padding: 50px 20px; /* Ajustar el relleno para dispositivos más pequeños */
+	}
+	
+	.titulo-comment {
+		font-size: 40px; /* Reducir el tamaño del título para dispositivos más pequeños */
+		margin-bottom: 20px; /* Reducir el margen inferior */
+	}
+	
+	.blog-1 {
+		padding: 15px; /* Reducir el relleno para dispositivos más pequeños */
+	}
+	
+	.blog-1 img {
+		width: 100%; /* Hacer que las imágenes sean responsivas y ocupen todo el ancho disponible */
+		max-width: 300px; /* Establecer un ancho máximo para las imágenes */
+		margin-bottom: 10px; /* Reducir el margen inferior */
+	}
+	
+	.blog-1 h3 {
+		font-size: 20px; /* Reducir el tamaño del título */
+	}
+	
+	.blog-1 p {
+		font-size: 14px; /* Reducir el tamaño del texto */
+	}
+	
+
+	.carousel {
+		width: 100%; /* Cambiar el ancho del carrusel para que ocupe todo el ancho disponible */
+		height: auto; /* Cambiar la altura a automático para que se ajuste según el contenido */
+		overflow: hidden;
+		margin: 0 auto; /* Centrar el carrusel horizontalmente */
+	}
+	
+	.carousel-inner {
+		width: 100%;
+		height: auto; /* Cambiar la altura a automático */
+		display: block; /* Cambiar a bloque para que ocupe todo el ancho disponible */
+	}
+	
+	.carousel-item {
+		position: static; /* Cambiar la posición a estática para que se apilen verticalmente */
+		opacity: 1; /* Ajustar la opacidad para que el primer elemento sea visible */
+		animation: none; /* Deshabilitar la animación */
+	}
+	
+	.carousel-item img {
+		width: 100%;
+		height: auto; /* Cambiar la altura a automático */
+		object-fit: cover;
+		filter: brightness(90%) saturate(80%);
+	}
+	
+	.home-h {
+		font-size: 20px;
+		margin: 0 auto; /* Centrar horizontalmente */
+		text-align: center
+	}
+	.home-p {
+		font-size: 20px;
+		margin: 0 auto; /* Centrar horizontalmente */
+		text-align: center; /* Alinear el texto al centro */
+	}
+	.titulo, .titulo-comment {
+		font-size: 30px;
+	}
+	
+	.box-element, .thumbnail {
+		margin-left: 70px;
+		width: 250px;
+	}
+
+	.container-nosotros {
+		max-width: 1200px;
+		width: 100%;
+		color: white;
+		text-align: center;
+		padding: 50px;
+		border-radius: 8px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+		background-image: none;
+	}
+	.container-nosotros::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 120%;
+		background-color: url('../images/fondo.jpeg');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		filter: blur(8px); /* Aplica el desenfoque solo al fondo */
+		z-index: -1; /* Coloca este pseudo-elemento detrás del contenido */
+	}
+	.titulo-nosotros {
+		font-size: 30px;
+	}
+	.subtitulo {
+		font-size: 20px;
+	}
+	.imagen {
+		width: 100%;
+		max-width: 120px;
+		filter: hue-rotate(180deg) brightness(80%);
+	}
+	.parrafo {
+		font-size: 14px;
+	}
+	.row-image {
+		width: 100px;
+		margin-left: 0px;
+		margin-right: 5px;
+	}
+	.box-element2 p {
+		font-size: 14px;
+	}
+	.carro-item {
+		text-align: center !important;
+		font-size: 14px !important;
+		font-weight: bold;
+	}
+	.carro-items {
+		text-align: end !important;
+		font-size: 14px !important;
+		font-weight: bold;
+	}
+	.quantity img, p{
+		justify-content: end !important;
+	}
+	.btn-success {
+		padding: 3px 6px;
+	}
+	.box-element2 h5 {
+		font-size: 17px;
+	}
+}
